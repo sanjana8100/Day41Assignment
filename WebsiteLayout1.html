@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout 1</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            min-height: 100%;
+            flex-direction: column;
+            margin: 0;
+        }
+        #main{
+            display: flex;
+            flex: 1;
+        }
+        #main > article{
+            flex: 1;
+            order: 1;
+        }
+        #main > nav,
+        #main > aside{
+            flex: 0 0 20vw;
+        }
+
+        #main > nav{
+            background: #D7E8D4;
+            order: 3;
+        }
+        #main > aside{
+            background: beige;
+            order: 2;
+        }
+        header,footer{
+            background: yellowgreen;
+            height: 20vh;
+        }
+        header,footer,article,nav,aside{
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, eos.</p></header>
+    <div id="main">
+    <article>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, labore!</p></article>
+    <nav>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quidem.</p></nav>
+    <aside>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, temporibus.
+        </p></aside>
+    </div>
+    <footer>Thank You</footer>
+</body>
+</html>
